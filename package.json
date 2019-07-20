@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "expect.js": "^0.3.1",
     "react-scripts": "^3.0.1",
     "uuid": "^3.3.2"
   },
   "scripts": {
     "test": "react-scripts test --env=jsdom"
   },
-
   "repository": {
     "type": "git",
     "url": "git+ https://github.com/KostiantynDobrutskyi/bsa-testing.git"
-
   },
   "author": "Kostiantyn Dobrutskyi",
   "bugs": {

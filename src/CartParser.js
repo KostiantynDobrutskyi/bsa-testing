@@ -1,8 +1,6 @@
 import readFileSync from "fs"
 import * as uuid from 'uuid';
 
-// var fs = require("fs");
-// var uuid = require("uuid");
 
 
 class CartParser {
@@ -179,6 +177,7 @@ class CartParser {
             values = csvLine.split(/,/).map(cell => cell.trim()),
             item = {};
 
+
         for (let i = 0; i < keys.length; i++) {
             const
                 type = types[i],
@@ -222,20 +221,6 @@ class CartParser {
         };
     }
 }
-
-// let crd = "Product name,Price,Quantity\n" +
-//     "Mollis consequat,9.00,2\n" +
-//     "Tvoluptatem,10.32,1\n" +
-//     "Scelerisque lacinia,18.90,1\n" +
-//     "Consectetur adipiscing,28.72,10\n" +
-//     "Condimentum aliquet,13.90,1\n";
-//
-// let cart = new CartParser();
-//
-// console.log(cart.validate(crd));
-
-// lines = cart.readFile("../samples/cart.csv").split(/\n/).filter(l => l).filter((l, i) => i > 0);
-// console.log(lines.map(l => cart.parseLine(l)))
 
 
 export default CartParser;
